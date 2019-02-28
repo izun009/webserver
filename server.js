@@ -69,6 +69,14 @@ app.get('/about', (req,res) => {
 });
 
 
+app.get('/project', (req,res) => {
+    res.render('project.hbs', {
+        pageTitle: "This Project Page",
+        message: "Create some project in project page"
+    });
+});
+
+
 app.get('/bad', (req,res) => {
     res.send({
         errorMessage : "Unable to Handle Request"
