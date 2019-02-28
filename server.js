@@ -77,6 +77,14 @@ app.get('/project', (req,res) => {
 });
 
 
+app.get('/contact', (req, res) => {
+    res.render('contact.hbs', {
+        pageTitle: "This contact page",
+        message: "Contact me"
+    });
+});
+
+
 app.get('/bad', (req,res) => {
     res.send({
         errorMessage : "Unable to Handle Request"
